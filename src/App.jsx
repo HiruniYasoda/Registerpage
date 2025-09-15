@@ -8,7 +8,7 @@ const App = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto relative">
         {/* Go Back Button Section */}
         <div
-          className="flex-shrink-0 mr-2 self-start hidden lg:block"
+          className="flex-shrink-0 mr-4 self-start hidden lg:block"
           style={{ marginTop: '0rem' }}
         >
           <button className="bg-neutral-500 text-white py-2 px-6 rounded-full shadow-lg flex bg-opacity-90 hover:bg-neutral-500 transition-colors duration-300">
@@ -21,21 +21,10 @@ const App = () => {
           {/* Form Section */}
           <div className="relative p-10 w-full lg:w-1/2 flex flex-col justify-center bg-neutral-500 bg-opacity-90 backdrop-blur-md rounded-3xl border-r-4 border-neutral-400 z-10">
             <h1 className="text-white text-2xl font-bold text-center mb-4">
-              Create an Account
+              Welcome Back
             </h1>
 
             <div className="space-y-3 mb-4">
-              <div>
-                <label className="text-white font-semibold text-base font-sans">
-                  User Name :
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter User name here"
-                  className="w-full mt-1 p-2 text-sm rounded-lg bg-neutral-400 text-white placeholder-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
-                />
-              </div>
-
               <div>
                 <label className="text-white font-semibold text-base font-sans">
                   Email:
@@ -53,26 +42,31 @@ const App = () => {
                 </label>
                 <input
                   type="password"
-                  placeholder="Enter password here"
+                  placeholder="Enter Password here"
                   className="w-full mt-1 p-2 text-sm rounded-lg bg-neutral-400 text-white placeholder-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
                 />
               </div>
-              
 
               <div>
                 <label className="text-white font-semibold text-base font-sans">
                   Confirm Password :
                 </label>
                 <input
-                  type="password"
-                  placeholder="Confirm password"
-                  className="w-full mt-1 p-2 text-sm rounded-lg bg-neutral-400 text-white placeholder-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+                  type="checkbox"
+                  id="remember-me"
+                  className="h-4 w-4 rounded border-neutral-300 bg-neutral-400 text-neutral-600 focus:ring-neutral-500"
                 />
+                <label htmlFor="remember-me" className="ml-2 text-neutral-300">
+                  Remember me
+                </label>
               </div>
+              <a href="#" className="text-neutral-300 hover:underline">
+                Forget password
+              </a>
             </div>
 
             <button className="w-2/3 mx-auto bg-neutral-400 text-white p-2 rounded-lg font-extrabold text-sm hover:bg-neutral-600 transition duration-300 shadow-md bg-opacity-70 flex items-center justify-center">
-              <UserPlus className="w-4 h-4 mr-2" /> Register
+              <LogIn className="w-5 h-5 mr-2" /> Login
             </button>
 
             <div className="flex items-center my-3">
@@ -81,13 +75,13 @@ const App = () => {
             </div>
 
             <p className="text-left text-neutral-300 text-sm font-bold mt-4">
-              If you have an account
+              If you haven't an account
             </p>
 
             <br></br>
 
             <button className="w-2/3 mx-auto bg-transparent border border-neutral-300 text-white py-1.5 rounded-lg font-bold text-lg hover:bg-neutral-600 transition-colors duration-300 shadow-md flex items-center justify-center" style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.1)' }}>
-              <LogIn className="w-5 h-5 mr-2" /> Login
+              <UserPlus className="w-5 h-5 mr-2" /> Register
             </button>
 
             <p className="text-center text-neutral-300 text-sm font-bold mt-4">
@@ -96,9 +90,9 @@ const App = () => {
           </div>
 
           {/* Image Section - Overlapping on border */}
-          <div className="hidden lg:block absolute top-0 bottom-0 right-0 flex items-center z-20">
+          <div className="hidden lg:block absolute top-0 bottom-0 left-28 flex items-center z-20">
             <img
-              src="image1.png"
+              src="image3.png"
               alt="Cartoon character holding a book"
               className="h-full object-contain pointer-events-none"
             />
