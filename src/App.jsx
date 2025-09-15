@@ -57,6 +57,7 @@ const App = () => {
                   className="w-full mt-1 p-2 text-sm rounded-lg bg-neutral-400 text-white placeholder-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
                 />
               </div>
+              
 
               <div>
                 <label className="text-white font-semibold text-base font-sans">
